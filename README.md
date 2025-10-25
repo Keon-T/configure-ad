@@ -26,7 +26,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Virtual Network and Subnet
-- -Domain controller vm (windows server 2022)
+- Domain controller vm (windows server 2022)
 - Azure Portal
 - PowerShell
 
