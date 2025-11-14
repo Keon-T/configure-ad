@@ -33,8 +33,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/dIhy0ea.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create resource group with virtual machine as active directory and join it in remote desktop
 
+Create resource group as active directory and virtual machine joining with domain controller VM (windows server 2022) named dc-1'and set NIC private IP address to static then create the following client virtual machines (windows 10) named "client-1"
 </p>
 <br />
 
@@ -42,8 +42,7 @@ Create resource group with virtual machine as active directory and join it in re
 <img src="https://i.imgur.com/zeHeKxe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
- Pasting dc 1 private IP address changes it from Vnets and points to client-1 DNS for any searches within the computer
-
+ Change DNS settings and the NIC to point to DC-1 IP private IP -address from virtual machine pasting to client-1 network settings ip address to dns server
 </p>
 <br />
 
@@ -51,6 +50,5 @@ Create resource group with virtual machine as active directory and join it in re
 <img src="https://i.imgur.com/ASSjIMe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-</p>From client one open up powershell and run (IP config all) for the DNS settings to show DC ones private IP address
-
+Login to client-1  attempt to ping dc private IP address from virtual machine and open powershell and pasting IP address then enter to ping
 <br />
